@@ -19,6 +19,7 @@ export async function get (req) {
 
   const id = req.pathParameters?.id
   const result = await getBook(id)
+  console.log('result', result)
   return {
     json: { book: result }
   }

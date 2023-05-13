@@ -36,7 +36,6 @@ export default function Html ({ html, state }) {
   <enhance-fieldset legend="Book">
   <enhance-text-input label="Title" type="text" id="title" name="title" value="${book?.title}" errors="${problems?.title?.errors}"></enhance-text-input>
   <enhance-text-input label="Author" type="text" id="author" name="author" value="${book?.author}" errors="${problems?.author?.errors}"></enhance-text-input>
-  <input type="hidden" id="key" name="key" value="${book?.key}" />
   <enhance-submit-button style="float: right"><span slot="label">Save</span></enhance-submit-button>
   </enhance-fieldset>
 </enhance-form>
